@@ -23,8 +23,8 @@ spring:
             - AddRequestHeader=first-request, first-request-value
             # 응답 : 'first-response'헤더에 'first-response-value'값을 추가하는 필터
             - AddResponseHeader=first-response, first-response-value
-        - id: 2nd-service
-          uri: lb://2ND-SERVICE
+        - id: 2st-service
+          uri: lb://2ST-SERVICE
           predicates:
             - Path=/second-service/**
           filters:
